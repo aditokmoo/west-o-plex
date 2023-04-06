@@ -1,0 +1,41 @@
+.services {
+    position: relative;
+    background-color: #f9f9f9;
+    height: 100%;
+    margin-top: -105px;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 96%);
+    // Tablet
+    @include responsive('tablet') {
+        clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 97.5%);
+    }
+
+    .top-object {
+        background-color:  $secondaryColor;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 150px;
+        clip-path: polygon(100% 5%, 0 0, 0 58%);
+    }
+
+    .service-section {
+        padding: 150px 0 100px 0;
+        text-align: center;
+
+        .cards {
+            margin: 50px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            @include responsive('tablet') {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                padding: 40px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,40 @@
+.repair-service {
+    background-image: url('../../images/service-info-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 96%);
+    margin-top: -55px;
+    height: 100%;
+
+
+    .repair-service-section {
+        padding: 150px 0;
+
+        .heading {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .cards {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+            margin: 50px 0;
+
+            // Tablet
+            @include responsive('tablet') {
+                display: block;
+            }
+
+            .card {
+                // Tablet
+                @include responsive('tablet') {
+                    width: 70%;
+                    margin: 50px auto;
+                }
+            }
+        }
+    }
+}

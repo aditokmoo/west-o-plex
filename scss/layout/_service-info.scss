@@ -1,0 +1,68 @@
+.service-info {
+    background: url('../../images/service-info-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
+    margin-top: -45px;
+
+    @include responsive('tablet') {
+        margin-top: -60px;
+    }
+
+    .service-info-section {
+        padding: 100px 0;
+        // Tablet
+        @include responsive('tablet') {
+            padding: 100px 50px;
+        }
+
+        h1 {
+            color: #353535;
+            margin: 10px 0;
+            width: 80%;
+            // Tablet
+            @include responsive('tablet') {
+                width: 100%;
+            }
+        }
+
+        p {
+            color: rgba(0, 0, 0, 0.9);
+            line-height: 2;
+        }
+        
+        .content {
+            position: relative;
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 5px;
+                left: -20px;
+                background: $secondaryColor;
+                width: 3px;
+                height: 50px;
+            }
+        }
+
+        .top-content .content p {
+            margin-top: 30px;
+        }
+
+        .bottom-content {
+            display: flex;
+            gap: 100px;
+            margin-top: 40px;
+            // Tablet
+            @include responsive('tablet') {
+                display: block;
+            }
+
+            p {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

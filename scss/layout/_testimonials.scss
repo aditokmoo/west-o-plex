@@ -1,0 +1,67 @@
+.testimonial {
+    background-color: #fff;
+    clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 95%);
+    margin-top: -60px;
+    height: 100%;
+
+    .testimonial-section {
+        padding: 120px 0;
+
+        .heading {
+            margin: 0 auto;
+            width: 60%;
+        }
+
+        .cards {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 50px;
+            margin: 100px 0;
+
+            // Tablet
+            @include responsive('tablet') {
+                display: block;
+            }
+            
+            .client-card {
+                background: #FFFFFF;
+                height: 100%;
+                width: 100%;
+                box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+
+                .top-content {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    img {
+                        border-radius: 50%;
+                    }
+
+                    .details {
+                        h2 {
+                            color: $primaryColor;
+                        }
+
+                        p {
+                            margin: 5px 0 10px 0;
+                            display: block;
+                            font-weight: 200;
+                        }
+                    }
+                }
+
+                .bottom-content {
+
+                    p {
+                        font-weight: 200;
+                        line-height: 2;
+                        margin: 40px 0;
+                    }
+                }
+            }
+        }
+    }
+}

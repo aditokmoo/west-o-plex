@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: $primaryTextFont;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+span {
+    color: $primaryColor;
+}
+
+textarea, input {
+    background: rgba(255, 255, 255, 0.4);
+    font-family: Open Sans;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+
+    &:focus {
+        outline-color: $primaryColor;
+    }
+}
+
+.heading {
+    text-align: center;
+}
+
+.btn {
+    text-align: center;
+    margin: 100px auto 0 auto;
+    display: block;
+    width: 300px;
+
+    a {
+        width: 100%;
+        background-color: $secondaryColor;
+        color: $lightTextColor;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 10px;
+        transition: .2s;
+        text-align: center;
+    
+        &:hover {
+            opacity: .7;
+        }
+    }
+}
