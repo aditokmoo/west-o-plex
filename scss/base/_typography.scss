@@ -6,13 +6,16 @@ h1 {
     font-size: 3em;
     // Small Mobile
     @include responsive('small-mobile') {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 }
 
 h2 {
     font-family: Montserrat;
     font-size: 1.5em;
+    @include responsive('small-mobile') {
+        font-size: 1.5em;
+    }
 }
 
 h3 {
@@ -24,9 +27,15 @@ h3 {
     font-weight: 200;
     color: #353535;
     margin: 15px 0;
+    @include responsive('small-mobile') {
+        font-size: 1em;
+    }
 }
 
 p {
     font-weight: 200;
     line-height: 2;
+    @include responsive('small-mobile') {
+        font-size: 1em;
+    }
 }

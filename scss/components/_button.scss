@@ -3,6 +3,9 @@
     margin: 100px auto 0 auto;
     display: block;
     width: 300px;
+    @include responsive('small-mobile') {
+        width: 90%;
+    }
 
     a {
         width: 100%;

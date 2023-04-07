@@ -22,10 +22,7 @@
             @content;
         }
     }
-}
 
-/* CAROUSEL BREAKPOINT */
-@mixin carouselBrakepoint($breakpoint) {
     @if($breakpoint == 'mobile-small-tablet-1') {
         @media only screen and (max-width: 655px) {
             @content;

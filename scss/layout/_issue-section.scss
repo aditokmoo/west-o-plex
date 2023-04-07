@@ -4,6 +4,10 @@
     height: 100%;
     margin-top: -60px;
 
+    @include responsive('mobile') {
+        clip-path: polygon(0 0, 100% 2.5%, 100% 100%, 0 99.4%);
+    }
+
     .issue-section {
         padding: 150px 0;
 

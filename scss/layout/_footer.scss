@@ -23,6 +23,10 @@
             h1 {
                 font-size: 2.5em;
                 margin: 10px 0;
+                // Small Mobile
+                @include responsive('mobile') {
+                    font-size: 1em;   
+                }
             }
 
             p {

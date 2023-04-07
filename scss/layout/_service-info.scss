@@ -10,6 +10,11 @@
         margin-top: -60px;
     }
 
+    @include responsive('mobile') {
+        margin-top: -78px;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 96%);
+    }
+
     .service-info-section {
         padding: 100px 0;
         // Tablet

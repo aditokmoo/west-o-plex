@@ -10,7 +10,7 @@
     }
     // Mobile
     @include responsive('mobile') {
-        clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 97.5%);
+        clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 99.5%);
     }
 
     .top-object {
