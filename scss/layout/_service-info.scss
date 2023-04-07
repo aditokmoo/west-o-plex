@@ -5,14 +5,14 @@
     background-position: center;
     clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
     margin-top: -45px;
-
+    // Tablet
     @include responsive('tablet') {
         margin-top: -60px;
     }
-
+    // Mobile
     @include responsive('mobile') {
         margin-top: -78px;
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 96%);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 97.3%);
     }
 
     .service-info-section {

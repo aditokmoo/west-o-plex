@@ -1,13 +1,15 @@
 .testimonial {
     background-color: #fff;
-    clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 99%);
+    clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 96%);
     margin-top: -60px;
     height: 100%;
     // Tablet
     @include responsive('tablet') {
         overflow-x: hidden;
+        clip-path: polygon(0 0, 100% 2.5%, 100% 100%, 0 96%);
+        margin-top: -71px;
     }
-
+    // Mobile
     @include responsive('mobile') {
         clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 99%);
     }

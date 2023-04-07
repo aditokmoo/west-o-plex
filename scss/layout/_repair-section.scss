@@ -3,10 +3,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 96%);
-    margin-top: -66px;
+    clip-path: polygon(0 0, 100% 5.5%, 100% 100%, 0 96%);
+    margin-top: -56px;
     height: 100%;
-
+    // Tablet
+    @include responsive('tablet') {
+        clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 96%);
+        margin-top: -64px;
+    }
+    // Mobile
+    @include responsive('mobile') {
+        clip-path: polygon(0 0, 100% 2.5%, 100% 100%, 0 96%);
+        margin-top: -65px;
+    }
 
     .repair-service-section {
         padding: 150px 0;
