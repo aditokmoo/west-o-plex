@@ -18,6 +18,28 @@
         padding: 120px 0;
         position: relative;
 
+        &::before {
+            content: url('../../images/testimonial-icon-1.png');
+            display: block;
+            position: absolute;
+            top: 200px;
+            left: 0;
+            width: 180px;
+            height: 180px;
+            z-index: -1;
+        }
+
+        &::after {
+            content: url('../../images/testimonial-icon-2.png');
+            display: block;
+            position: absolute;
+            bottom: 70px;
+            right: 100px;
+            width: 180px;
+            height: 180px;
+            z-index: -1;
+        }
+
         .heading {
             margin: 0 auto;
             width: 60%;
@@ -28,6 +50,7 @@
             margin: 50px auto 10px auto;
             position: relative;
             overflow: hidden;
+
             // Tablet
             @include responsive('tablet') {
                 height: 65rem;
