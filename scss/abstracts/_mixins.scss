@@ -4,4 +4,61 @@
             @content;
         }
     }
+
+    @if($breakpoint == 'small-tablet') {
+        @media only screen and (max-width: 900px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == 'mobile') {
+        @media only screen and (max-width: 630px ) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == 'small-mobile') {
+        @media only screen and (max-width: 380px) {
+            @content;
+        }
+    }
+}
+
+/* CAROUSEL BREAKPOINT */
+@mixin carouselBrakepoint($breakpoint) {
+    @if($breakpoint == 'mobile-small-tablet-1') {
+        @media only screen and (max-width: 655px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == 'mobile-small-tablet-2') {
+        @media only screen and (max-width: 650px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == 'small-mobile-mobile-1') {
+        @media only screen and (max-width: 630px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == 'small-mobile-mobile-2') {
+        @media only screen and (max-width: 490px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == 'small-mobile-mobile-3') {
+        @media only screen and (max-width: 400px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == 'small-mobile') {
+        @media only screen and (max-width: 350px) {
+            @content;
+        }
+    }
 }

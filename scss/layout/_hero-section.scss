@@ -29,14 +29,97 @@
             border-right: 1px solid #ddd;
             padding: 5px 10px 5px 0;
             top: 5px;
+            // Tablet
+            @include responsive('tablet') {
+                left: 20px;
+            }  
+            // Mobile
+            @include responsive('mobile') {
+                left: 20px;
+            }
+        }
+
+        .bars {
+            display: none;
+            // Small Tablet
+            @include responsive('small-tablet') {
+                display: block;
+                color: #fff;
+                font-size: 2em;
+                position: absolute;
+                top: 30px;
+                right: 40px;
+                cursor: pointer;
+            }
+            
+        }
+
+        .side-bar {
+            display: none;
+            
+            // Small Tablet
+            @include responsive('small-tablet') {
+                display: block;
+                transform: translateX(500px);
+                background-color: #fff;
+                position: fixed;
+                list-style: none;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                padding-top: 50px;
+                width: 50%;
+                height: 100vh;
+                z-index: 99;
+                transition: transform .5s;
+
+                &.active {
+                    transform: translateX(0);
+                }
+                
+                .fa {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    font-size: 1.5em;
+                    cursor: pointer;
+                }
+        
+                li {
+                    padding: 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: $darkTextColor;
+                        width: 100%;
+                        padding: 10px 30px;
+
+                    }
+                    &:hover {
+                        background-color: $primaryColor;
+                        
+                        a {
+                            color: $lightTextColor;
+                        }
+                    }
+                }
+            }
         }
      
-        ul {
+        .nav-bar {
          display: flex;
          align-items: center;
          justify-content: space-between;
          list-style-type: none;
          width: 100%;
+         // Small Tablet
+         @include responsive('small-tablet') {
+            display: none;
+        }
+          // Mobile
+        @include responsive('mobile') {
+            display: none;
+        }
      
          li a {
             color: $lightTextColor;
@@ -67,6 +150,10 @@
             h1 {
                 text-transform: uppercase;
                 padding: 0 50px 0 0;
+                 // Mobile
+                 @include responsive('mobile') {
+                    padding: 0;
+                }
             }
 
             p {
@@ -74,15 +161,23 @@
                 font-size: 1.2em;
                 font-family: $primaryTextFont;
                 color: rgba(255, 255, 255, 0.8);
-                line-height: 1.9;
             }
 
             &.left {
                 width: 50%;
+                // Tablet
                 @include responsive('tablet') {
                     width: 80%;
                     margin: 100px auto;
                     text-align: center;
+                }
+                 // Mobile
+                @include responsive('mobile') {
+                    font-size: 0.6em;
+                }
+                // Small Mobile
+                @include responsive('small-mobile') {
+                    margin: 0 auto;
                 }
                 
                 ul {
@@ -91,7 +186,10 @@
                     list-style: none;
                     gap: 20px;
                     margin: 20px 0;
-    
+                     // Mobile
+                    @include responsive('mobile') {
+                        flex-direction: column;
+                    }
     
                     li {
                         width: 100%;
@@ -106,6 +204,10 @@
                             font-size: 17px;
                             border-radius: 5px;
                             transition: .2s;
+                            // Small Mobile
+                            @include responsive('small-mobile') {
+                                font-size: 14px;
+                            }
                         
                             &:hover {
                                 opacity: .7;

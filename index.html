@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./dist/css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src='/js/index.js' defer></script>
 </head>
 <body>
     
@@ -18,8 +20,26 @@
                     <div class="logo">
                         <img src="./images/logo.png" alt="West-o-plex logo">
                     </div>
-                    <ul>
-                        <li><a href="#" class="active">Home</a></li>
+                    <ul class="nav-bar">
+                        <li><a href="#" >Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">AC</a></li>
+                        <li><a href="#">Furnance</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Fininacing</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                    <!-- Side bar -->
+                    <div class="bars">
+                        <i class="fa fa-bars" id="open-btn"></i>
+                    </div>
+                    <ul class="side-bar">
+                        <i class="fa fa-times" id="close-btn"></i>
+                        <li><a href="#" >Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">AC</a></li>
@@ -257,71 +277,199 @@
                     <h1>What Our <span>Customers</span> Say About US</h1>
                 </div>
                 
-                <div class="cards">
-
-                    <!-- Client 1 Section -->
-                    <div class="client-card">
-                        <div class="top-content">
-                            <img src="/images/client-img.png" alt="Client Image">
-                            <div class="details">
-                                <h2>Elenor Bloom</h2>
-                                <p>Lorem Ipsum Test 1</p>
-                                <div class="stars-icon">
-                                    <img src="/images/star.png" alt="star icon">
-                                    <img src="/images/star.png" alt="star icon">
-                                    <img src="/images/star.png" alt="star icon">
-                                    <img src="/images/star.png" alt="star icon">
-                                    <img src="/images/star.png" alt="star icon">
+                <div class="carousel-container">
+                    <div class="carousel">
+                      <div class="card-slide">
+                         <!-- Client 1 Section -->
+                         <div class="client-card">
+                            <div class="top-content">
+                                <img src="/images/client-img.png" class="profile" alt="Client Image">
+                                <div class="details">
+                                    <h2>Elenor Bloom 1</h2>
+                                    <p>Lorem Ipsum Test 1</p>
+                                    <div class="stars-icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="bottom-content">
-                            <p>These guys are so Knowledgeable they come out check your appliance and fix the problem. I strongly recommend their business to any and everyone. I'm a Happy Customer!!!</p>
-                        </div>
-                    </div>
-
-                    <!-- Client 2 Section -->
-                    <div class="client-card">
-                        <div class="top-content">
-                            <img src="/images/client-img.png" alt="Client Image">
-                            <div class="details">
-                                <h2>Elenor Bloom</h2>
-                                <p>Lorem Ipsum Test 1</p>
-                                <div class="stars-icon">
-                                    <img src="/images/star.png" alt="star icon">
-                                    <img src="/images/star.png" alt="star icon">
-                                    <img src="/images/star.png" alt="star icon">
-                                    <img src="/images/star.png" alt="star icon">
-                                    <img src="/images/star.png" alt="star icon">
-                                </div>
+                            <div class="bottom-content">
+                                <p>These guys are so Knowledgeable they come out check your appliance and fix the problem. I strongly recommend their business to any and everyone. I'm a Happy Customer!!!</p>
                             </div>
                         </div>
-                        <div class="bottom-content">
-                            <p>These guys are so Knowledgeable they come out check your appliance and fix the problem. I strongly recommend their business to any and everyone. I'm a Happy Customer!!!</p>
-                        </div>
-                    </div>
-
-                    <!-- Client 3 Section -->
-                    <div class="client-card">
-                        <div class="top-content">
-                            <img src="/images/client-img.png" alt="Client Image">
-                            <div class="details">
-                                <h2>Elenor Bloom</h2>
-                                <p>Lorem Ipsum Test 1</p>
-                                <div class="stars-icon">
-                                    <img src="/images/star.png" alt="star icon">
-                                    <img src="/images/star.png" alt="star icon">
-                                    <img src="/images/star.png" alt="star icon">
-                                    <img src="/images/star.png" alt="star icon">
-                                    <img src="/images/star.png" alt="star icon">
+                         <!-- Client 1 Section -->
+                         <div class="client-card">
+                            <div class="top-content">
+                                <img src="/images/client-img.png" class="profile" alt="Client Image">
+                                <div class="details">
+                                    <h2>Elenor Bloom</h2>
+                                    <p>Lorem Ipsum Test 1</p>
+                                    <div class="stars-icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                    </div>
                                 </div>
                             </div>
+                            <div class="bottom-content">
+                                <p>These guys are so Knowledgeable they come out check your appliance and fix the problem. I strongly recommend their business to any and everyone. I'm a Happy Customer!!!</p>
+                            </div>
                         </div>
-                        <div class="bottom-content">
-                            <p>These guys are so Knowledgeable they come out check your appliance and fix the problem. I strongly recommend their business to any and everyone. I'm a Happy Customer!!!</p>
+                         <!-- Client 1 Section -->
+                         <div class="client-card">
+                            <div class="top-content">
+                                <img src="/images/client-img.png" class="profile" alt="Client Image">
+                                <div class="details">
+                                    <h2>Elenor Bloom 2</h2>
+                                    <p>Lorem Ipsum Test 1</p>
+                                    <div class="stars-icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-content">
+                                <p>These guys are so Knowledgeable they come out check your appliance and fix the problem. I strongly recommend their business to any and everyone. I'm a Happy Customer!!!</p>
+                            </div>
                         </div>
+                      </div>
+
+                      <div class="card-slide">
+                        <div class="client-card">
+                            <div class="top-content">
+                                <img src="/images/client-img.png" class="profile" alt="Client Image">
+                                <div class="details">
+                                    <h2>Elenor Bloom 3</h2>
+                                    <p>Lorem Ipsum Test 1</p>
+                                    <div class="stars-icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-content">
+                                <p>These guys are so Knowledgeable they come out check your appliance and fix the problem. I strongly recommend their business to any and everyone. I'm a Happy Customer!!!</p>
+                            </div>
+                        </div>
+                        <div class="client-card">
+                            <div class="top-content">
+                                <img src="/images/client-img.png" class="profile" alt="Client Image">
+                                <div class="details">
+                                    <h2>Elenor Bloom 4</h2>
+                                    <p>Lorem Ipsum Test 1</p>
+                                    <div class="stars-icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-content">
+                                <p>These guys are so Knowledgeable they come out check your appliance and fix the problem. I strongly recommend their business to any and everyone. I'm a Happy Customer!!!</p>
+                            </div>
+                        </div>
+                        <div class="client-card">
+                            <div class="top-content">
+                                <img src="/images/client-img.png" class="profile" alt="Client Image">
+                                <div class="details">
+                                    <h2>Elenor Bloom 5</h2>
+                                    <p>Lorem Ipsum Test 1</p>
+                                    <div class="stars-icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-content">
+                                <p>These guys are so Knowledgeable they come out check your appliance and fix the problem. I strongly recommend their business to any and everyone. I'm a Happy Customer!!!</p>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="card-slide">
+                        <div class="client-card">
+                            <div class="top-content">
+                                <img src="/images/client-img.png" class="profile" alt="Client Image">
+                                <div class="details">
+                                    <h2>Elenor Bloom 6</h2>
+                                    <p>Lorem Ipsum Test 1</p>
+                                    <div class="stars-icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-content">
+                                <p>These guys are so Knowledgeable they come out check your appliance and fix the problem. I strongly recommend their business to any and everyone. I'm a Happy Customer!!!</p>
+                            </div>
+                        </div>
+                        <div class="client-card">
+                            <div class="top-content">
+                                <img src="/images/client-img.png" class="profile" alt="Client Image">
+                                <div class="details">
+                                    <h2>Elenor Bloom 7</h2>
+                                    <p>Lorem Ipsum Test 1</p>
+                                    <div class="stars-icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-content">
+                                <p>These guys are so Knowledgeable they come out check your appliance and fix the problem. I strongly recommend their business to any and everyone. I'm a Happy Customer!!!</p>
+                            </div>
+                        </div>
+                        <div class="client-card">
+                            <div class="top-content">
+                                <img src="/images/client-img.png" class="profile" alt="Client Image">
+                                <div class="details">
+                                    <h2>Elenor Bloom 8</h2>
+                                    <p>Lorem Ipsum Test 1</p>
+                                    <div class="stars-icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                        <img src="/images/star.png" alt="star icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-content">
+                                <p>These guys are so Knowledgeable they come out check your appliance and fix the problem. I strongly recommend their business to any and everyone. I'm a Happy Customer!!!</p>
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                </div>
+                  </div>
+
+                  <div class="btns">
+                    <button class="prev-button"><i class="fa fa-chevron-left"></i></button>
+                    <button class="next-button"><i class="fa fa-chevron-right"></i></button>
+                  </div>
+
+                  <div class="dots"></div>
 
                 <div class="btn">
                     <a href="#">Leave  A Review</a>

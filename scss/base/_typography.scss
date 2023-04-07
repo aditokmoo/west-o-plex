@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
 h1 {
     font-family: Montserrat;
     font-size: 3em;
+    // Small Mobile
+    @include responsive('small-mobile') {
+        font-size: 2.5em;
+    }
 }
 
 h2 {
@@ -17,4 +24,9 @@ h3 {
     font-weight: 200;
     color: #353535;
     margin: 15px 0;
+}
+
+p {
+    font-weight: 200;
+    line-height: 2;
 }

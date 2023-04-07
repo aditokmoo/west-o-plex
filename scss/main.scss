@@ -1,9 +1,9 @@
-@import 'base/fonts';
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'base/typography';
 @import 'base/base';
 // Components
+@import 'components/button';
 @import 'components/card';
 // Layouts
 @import 'layout/hero-section';

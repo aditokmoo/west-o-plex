@@ -8,6 +8,10 @@
     @include responsive('tablet') {
         clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 97.5%);
     }
+    // Mobile
+    @include responsive('mobile') {
+        clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 97.5%);
+    }
 
     .top-object {
         background-color:  $secondaryColor;
@@ -29,11 +33,15 @@
             align-items: center;
             justify-content: center;
             gap: 30px;
-
+            // Tablet
             @include responsive('tablet') {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 padding: 40px;
+            }
+             // Mobile
+            @include responsive('mobile') {
+                grid-template-columns: 1fr;
             }
         }
 

@@ -36,25 +36,3 @@ textarea, input {
 .heading {
     text-align: center;
 }
-
-.btn {
-    text-align: center;
-    margin: 100px auto 0 auto;
-    display: block;
-    width: 300px;
-
-    a {
-        width: 100%;
-        background-color: $secondaryColor;
-        color: $lightTextColor;
-        text-decoration: none;
-        border-radius: 5px;
-        padding: 10px;
-        transition: .2s;
-        text-align: center;
-    
-        &:hover {
-            opacity: .7;
-        }
-    }
-}
