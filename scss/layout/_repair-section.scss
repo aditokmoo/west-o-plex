@@ -37,8 +37,6 @@
             }
 
             .card {
-                height: 600px;
-
                 // Tablet
                 @include responsive('tablet') {
                     width: 70%;
