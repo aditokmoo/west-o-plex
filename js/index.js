@@ -27,18 +27,18 @@ const slider = function () {
     slides.forEach(function (_, i) {
       dotContainer.insertAdjacentHTML(
         'beforeend',
-        `<button class="dots__dot" data-slide="${i}"></button>`
+        `<button class="dot" data-slide="${i}"></button>`
       );
     });
   };
 
   const activateDot = function (slide) {
     document
-      .querySelectorAll('.dots__dot')
+      .querySelectorAll('.dot')
       .forEach(dot => dot.classList.remove('active'));
 
     document
-      .querySelector(`.dots__dot[data-slide="${slide}"]`)
+      .querySelector(`.dot[data-slide="${slide}"]`)
       .classList.add('active');
   };
 
@@ -83,7 +83,7 @@ const slider = function () {
   btnLeft.addEventListener('click', prevSlide);
 
   dotContainer.addEventListener('click', function (e) {
-    if (e.target.classList.contains('dots__dot')) {
+    if (e.target.classList.contains('dot')) {
       const { slide } = e.target.dataset;
       goToSlide(slide);
       activateDot(slide);
