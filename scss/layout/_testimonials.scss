@@ -138,6 +138,9 @@
         .btns {
             position: relative;
             top: -300px;
+            // Small Desktop
+            top: -275px;
+            // Tablet
             @include responsive('tablet') {
                 top: -20rem;
             }
@@ -156,19 +159,36 @@
             .prev-button {
                 position: absolute;
                 left: -70px;
+                // Small Tablet
+                @include responsive('small-desktop') {
+                    left: 18px;
+                }
                 // Tablet
                 @include responsive('tablet') {
                     top: -300px;
                     left: 40px;
+                }
+                // Small Mobile
+                @include responsive('small-mobile') {
+                    left: 20px;
                 }
             }
 
             .next-button {
                 position: absolute;
                 right: -70px;
+                // Small Desktop
+                @include responsive('small-desktop') {
+                    right: 18px;
+                }
+                // Tablet
                 @include responsive('tablet') {
                     top: -300px;
                     right: 40px;
+                }
+                 // Small Mobile
+                 @include responsive('small-mobile') {
+                    right: 20px;
                 }
             }
         }

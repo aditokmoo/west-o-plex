@@ -37,6 +37,8 @@
             }
 
             .card {
+                height: 600px;
+
                 // Tablet
                 @include responsive('tablet') {
                     width: 70%;
@@ -44,6 +46,14 @@
 
                     p {
                         height: 100%;
+                    }
+                }
+                // Small mobile
+                @include responsive('small-mobile') {
+                    height: 100%;
+
+                    p {
+                        height: 500px;
                     }
                 }
             }

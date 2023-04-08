@@ -4,9 +4,13 @@
 h1 {
     font-family: Montserrat;
     font-size: 3em;
-    // Small Mobile
-    @include responsive('small-mobile') {
+    // Mobile
+    @include responsive('mobile') {
         font-size: 2em;
+    }
+    // Small Mobile
+    @include responsive('mobile') {
+        font-size: 1.5em;
     }
 }
 

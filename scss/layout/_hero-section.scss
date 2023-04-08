@@ -24,6 +24,9 @@
         justify-content: space-between;
         padding: 20px 0;
         gap: 30px;
+        @include responsive('small-desktop') {
+            padding: 20px;
+        }
      
         .logo {
             position: relative;
@@ -113,6 +116,10 @@
          justify-content: space-between;
          list-style-type: none;
          width: 100%;
+         // Small Desktop
+         @include responsive('small-desktop') {
+            width: 90%;
+         }
          // Small Tablet
          @include responsive('small-tablet') {
             display: none;
@@ -221,6 +228,11 @@
             &.right {
                 position: relative;
                 width: 60%;
+                // Small Desktop
+                @include responsive('small-desktop') {
+                    right: 100px;
+                }
+                // Tablet
                 @include responsive('tablet') {
                     display: none;
                 }
