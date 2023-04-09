@@ -50,7 +50,10 @@
             margin: 50px auto 10px auto;
             position: relative;
             overflow: hidden;
-
+            // Small Desktop
+            @include responsive('small-desktop') {
+                height: 450px;
+            }
             // Tablet
             @include responsive('tablet') {
                 height: 65rem;
@@ -137,16 +140,17 @@
 
         .btns {
             position: relative;
-            top: -300px;
-            // Small Desktop
-            top: -275px;
+            top: -250px;
+            @include responsive('small-desktop') {
+                top: -16em;
+            }
             // Tablet
             @include responsive('tablet') {
                 top: -20rem;
             }
 
             @include responsive('mobile') {
-                top: -30rem;
+                top: -50rem;
             }
 
             button {
@@ -161,7 +165,7 @@
                 left: -70px;
                 // Small Tablet
                 @include responsive('small-desktop') {
-                    left: 18px;
+                    left: -40px;
                 }
                 // Tablet
                 @include responsive('tablet') {
@@ -179,7 +183,7 @@
                 right: -70px;
                 // Small Desktop
                 @include responsive('small-desktop') {
-                    right: 18px;
+                    right: -40px;
                 }
                 // Tablet
                 @include responsive('tablet') {
